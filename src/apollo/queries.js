@@ -3,7 +3,7 @@ import { FACTORY_ADDRESS, BUNDLE_ID } from '../constants'
 
 export const SUBGRAPH_HEALTH = gql`
   query health {
-    indexingStatusForCurrentVersion(subgraphName: "uniswap/uniswap-v2-dev") {
+    indexingStatuses(subgraphs: ["QmbTMPxDhxU7y14H2jQVeAoZbcv9osWZmZcJiWxhYzCyR3"]) {
       synced
       health
       chains {
